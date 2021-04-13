@@ -17,8 +17,8 @@ def find_longest_strand(filename):
 
 	return [filename, maxlength, offset]
 
-# enter the path of binary files
-path = r"/Users/SY_Shirley/Desktop/Eluvio Challenge - Core Engineering/files"
+cwd = os.getcwd()
+path = cwd + '/files'
 os.chdir(path)
 
 maxname = ''; maxlength = 0; maxoffset = 0
